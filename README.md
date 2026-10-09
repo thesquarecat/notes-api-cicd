@@ -8,9 +8,9 @@ A small FastAPI notes service, built to demonstrate a complete CI/CD pipeline us
 
 Every push to `main` runs:
 
-1. **Test** — lint (ruff) + pytest
-2. **Build** — container image built and pushed to ghcr.io
-3. **Verify** — published image pulled back and smoke-tested (health, create, list)
+1. **Test** lint (ruff) + pytest
+2. **Build** container image built and pushed to ghcr.io
+3. **Verify** published image pulled back and smoke-tested (health, create, list)
 
 ## Run locally
 
