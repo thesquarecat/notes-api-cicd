@@ -13,7 +13,7 @@ client = TestClient(app)
 def test_health_returns_ok():
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "ok", "service": "notes-api"}  # intentional break
+    assert response.json() == {"status": "broken", "service": "notes-api"}  # intentional break
 
 def test_create_and_fetch_note():
     created = client.post("/notes", json={"text": "learn CI/CD"})
