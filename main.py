@@ -11,7 +11,7 @@ next_id = 1
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "service": "notes-api"}
+    return {"status": "ok", "service": "notes-api", "version": "2.0.0"}
 
 @app.get("/notes")
 def list_notes():
